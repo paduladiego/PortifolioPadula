@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import './fonts.css';
+/* @import "header.css"; */
+
+:root {
+	/* Colors */
+	--cor-1: #00D4FF;
+	--cor-2: #FF245C;
+	--cor-3: #14AA37;
+	--cor-4: #FF17B7;
+	--cor-5: #8C008C;
+	--cor-6: #FFFFFF;
+	--cor-7: #000000;
+	--cor-bg-1: #000000;
+	--cor-bg-1-in: #1A1B1D;
+	--cor-bg-2: #FFFFFF;
+	--cor-text-1: #FFFFFF;
+	--cor-text-2: #000000;
+	/* Fonts */
+	--font-inter: 'Inter', sans-serif;
+	--font-awesome: 'Font Awesome 6 Free';
+	--font-title: 'Rodchenko', sans-serif;
+	--font-paragrf: 'MuseoSans', sans-serif;
+}
+* {
+	font-size: 62.5%;
+	overflow: hidden;
+}
+header {
+	margin: 4.5rem 0;
+	background-color: var(--cor-bg-1-in);
+}
+
+body {
+	background-color: var(--cor-bg-1);
+	padding: 4.5rem 15rem;
+	/* height: 100vh; */
+	height: calc(100vh - 9rem);
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1; /* Ocupa o espaço restante verticalmente */
+	display: flex;
+	/* Adiciona barra de rolagem vertical caso o conteúdo seja maior que a tela */
+	overflow-y: auto;
+}
+nav {
+	height: 100%;
+	width: 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+nav div {
+	display: flex;
+	flex-direction: column;
+}
+p{
+	font-family: var(--font-paragrf);
+	color: var(--cor-text-1);
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 150%;
+	text-align: justify;
+}
+h3{
+	font-family: var(--font-title);
+	color: var(--cor-1);
+	font-size: 4.8rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-align: center;
+}
+
+.title {
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	text-align: center;
+	font-size: 1.6rem;
+	width: 40rem;
+	margin-bottom: 1rem;
+	background-image: url('/assets/images/bg-FHD-ID-C.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: .8rem .8rem 1rem #0000005d;
+}
+.title h1 {
+	font-family: var(--font-title);
+	color: var(--cor-text-1);
+	font-size: 4.8rem;
+	/* font-style: normal; */
+	font-weight: 400;
+	/* line-height: normal; */
+	
+}
+.title h2{
+	color: var(--cor-text-1);
+	font-family: var(--font-paragrf);
+	font-weight: 300;
+	font-size: 1.8rem;
+}
+
+.title__social {
+	display: flex;
+    justify-content: center;
+	margin: 3rem 0 5rem 0;
+	gap: 3rem;
+}
+.nav__social{
+	gap: 3rem;
+}
+.nav__cloud {
+	margin: 1.75rem;
+}
+.content {
+	font-size: 1.6rem;
+	flex: 1;
+	overflow-y: auto;
+	box-sizing: content-box;
+	padding: 0 4.5rem;
+	margin: 4.5rem 0;
+	background-color: var(--cor-bg-1-in);
+
+
+}
+footer {
+	/* padding: 1rem; */
+	text-align: end;
+	font-size: 1.2rem;
+	font-style: italic;
+	color: var(--cor-text-1);
+}
+
+b {
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: bold;
+}
+::-webkit-scrollbar {
+    width: 0.8rem; /* largura da barra de rolagem */
+	
+	
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor-bg-1-in); /* cor de fundo da área da barra de rolagem */
+	margin: 2rem 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cor-2); /* cor da alça da barra de rolagem */
+    border-radius: .8rem; /* borda arredondada */
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cor-3); /* cor da alça da barra de rolagem ao passar o mouse */
+
+}

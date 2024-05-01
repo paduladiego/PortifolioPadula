@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import './fonts.css';
+@import './scroll.css';
+
+:root {
+    /* Colors */
+    --cor-1: #00D4FF;
+    --cor-2: #FF245C;
+    --cor-3: #14AA37;
+    --cor-4: #FF17B7;
+    --cor-5: #8C008C;
+    --cor-6: #FFFFFF;
+    --cor-7: #000000;
+    --cor-bg-1: #000000;
+    --cor-bg-1-in: #1A1B1D;
+    --cor-bg-2: #FFFFFF;
+    --cor-text-1: #FFFFFF;
+    --cor-text-2: #000000;
+    /* Fonts */
+    --font-title: 'Rodchenko', sans-serif;
+    --font-paragraph: 'MuseoSans', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-awesome: 'Font Awesome 6 Free', sans-serif;
+    font-size: 62.5%;
+}
+
+* {
+    overflow: hidden;
+    font-size: 1.8rem;
+    color: var(--cor-text-1);
+    font-family: var(--font-paragraph);
+    font-weight: 300;
+
+}
+
+body {
+    padding: 4.5rem 15rem;
+    background-color: var(--cor-bg-1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    /* overflow-y: auto; */
+}
+
+header {
+    padding: 4.5rem 0;
+    width: 8rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-bg-1-in);
+    height: 100%;
+    justify-content: space-between;
+    padding-bottom: 1.75rem;
+    text-align: center;
+}
+
+.nav__social {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.title {
+    background-color: springgreen;
+    z-index: 1;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: 0;
+    background-image: url('/assets/images/bg-FHD-ID-C.jpg');
+    background-size: cover;
+    border: 0.2rem var(--cor-2) solid;
+}
+
+h1,
+h3 {
+    font-family: var(--font-title);
+    font-size: 4.8rem;
+    font-weight: 400;
+}
+
+.title h2 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    line-height: 150%;
+}
+
+.title__social {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 0 5rem 0;
+}
+
+.content {
+    background-color: var(--cor-bg-1-in);
+    flex: 1;
+    overflow-y: auto;
+    text-align: center;
+    margin: 4.5rem 0;
+    padding: 1rem 5rem;
+}
+
+.content h3 {
+    color: var(--cor-1);
+    padding: 2rem 0 1rem 0;
+}
+
+.content p {
+    padding: 0.5rem 0;
+    text-align: justify;
+    line-height: 150%;
+    text-indent: 2rem;
+}
+
+.content h4 {
+    text-align: left;
+    font-weight: 900;
+    color: var(--cor-1);
+    text-transform: uppercase;
+    padding: 1rem 0 0.5rem 0;
+}
+.content__list{
+    display: flex;
+    gap: 3rem;
+    line-height: 150%;
+    text-align: left;
+}
+.content__list ul{
+    padding: 0 0 1rem 2rem;
+    list-style: disc inside;
+    width: 50%;
+}
+
+footer {
+    font-size: 1.2rem;
+    text-align: end;
+    font-style: italic;
+    color: var(--cor-text-1);
+    /* background-color: coral; */
+}
