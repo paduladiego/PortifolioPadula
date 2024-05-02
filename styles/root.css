@@ -1,0 +1,21 @@
+:root {
+    /* Colors */
+    --cor-1: #00D4FF;
+    --cor-2: #FF245C;
+    --cor-3: #14AA37;
+    --cor-4: #FF17B7;
+    --cor-5: #8C008C;
+    --cor-6: #FFFFFF;
+    --cor-7: #000000;
+    --cor-bg-1: #000000;
+    --cor-bg-1-in: #1A1B1D;
+    --cor-bg-2: #FFFFFF;
+    --cor-text-1: #FFFFFF;
+    --cor-text-2: #000000;
+    /* Fonts */
+    --font-title: 'Rodchenko', sans-serif;
+    --font-paragraph: 'MuseoSans', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-awesome: 'Font Awesome 6 Free', sans-serif;
+    font-size: 62.5%;
+}

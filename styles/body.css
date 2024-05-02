@@ -1,0 +1,14 @@
+body {
+    padding: 4.5rem 15rem;
+    background-color: var(--cor-bg-1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 2100px) {
+    body{
+        padding: 6rem 20rem;
+    }    
+}
+

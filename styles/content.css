@@ -1,0 +1,60 @@
+.content {
+    background-color: var(--cor-bg-1-in);
+    flex: 1;
+    overflow-y: auto;
+    text-align: center;
+    margin: 4.5rem 0;
+    padding: 1rem 5rem;
+}
+
+.content h3 {
+    color: var(--cor-1);
+    padding: 2rem 0 1rem 0;
+}
+
+.content p {
+    padding: 0.5rem 0;
+    text-align: justify;
+    line-height: 150%;
+    text-indent: 2rem;
+}
+
+.content h4 {
+    text-align: left;
+    font-weight: 900;
+    color: var(--cor-1);
+    text-transform: uppercase;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.content__list {
+    display: flex;
+    gap: 3rem;
+    line-height: 150%;
+    text-align: left;
+}
+
+.content__list ul {
+    padding: 0 0 1rem 2rem;
+    list-style: disc inside;
+    width: 50%;
+}
+
+
+@media screen and (min-width: 2100px) {
+    .content {
+        text-indent: 3rem;
+
+    }
+
+    .content p {
+        padding: 1rem 0;
+
+    }
+
+    .content h4,
+    .content h3 {
+        padding: 2.5rem 0 1.5rem 0;
+
+    }
+}

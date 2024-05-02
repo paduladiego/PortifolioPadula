@@ -1,0 +1,48 @@
+.title {
+    z-index: 2;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: 0;
+    background-image: url('/assets/images/bg-FHD-ID-C.jpg');
+    background-size: cover;
+    border: 0.2rem var(--cor-2) solid;
+}
+
+.title h2 {
+    margin-top: 2rem;
+    /* font-size: 1.8rem; */
+    line-height: 150%;
+}
+
+.title__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0 5rem 0;
+
+}
+
+@media screen and (min-width: 2100px) {
+    .title {
+        z-index: 10;
+        /* margin-left: 0.05rem; */
+        border-inline-width: 0.5rem;
+        width: 54rem;
+        background-image: url('/assets/images/bg-QHD-ID-C.jpg');
+    }
+
+    .title h2 {
+        margin-top: 3rem;
+
+    }
+    
+    .title__social img {
+        width: 4.2rem;
+        gap: 4rem;
+        padding: 4rem 0 2rem 0;
+    }
+}

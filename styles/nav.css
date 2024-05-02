@@ -1,0 +1,32 @@
+/* @import './root.css'; */
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-bg-1-in);
+    height: 100%;
+    justify-content: space-between;
+    padding-bottom: 1.75rem;
+    text-align: center;
+}
+
+.nav__social {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+@media screen and (min-width: 2100px) {
+    nav {
+        padding-bottom: 2rem;
+        z-index: 1;
+    }
+
+    nav img {
+        width: 100%;
+    }
+
+    .nav__social,
+    .nav__cloud {
+        padding: 0 3.15rem;
+    }
+}
