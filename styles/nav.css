@@ -1,4 +1,4 @@
-/* @import './root.css'; */
+
 nav {
     display: flex;
     flex-direction: column;
@@ -7,6 +7,7 @@ nav {
     justify-content: space-between;
     padding-bottom: 1.75rem;
     text-align: center;
+    z-index: 1;
 }
 
 .nav__social {
@@ -18,7 +19,6 @@ nav {
 @media screen and (min-width: 2100px) {
     nav {
         padding-bottom: 2rem;
-        z-index: 1;
     }
 
     nav img {
@@ -29,4 +29,58 @@ nav {
     .nav__cloud {
         padding: 0 3.15rem;
     }
+}
+
+@media screen and (max-width: 1500px) {
+
+    nav img {
+        width: 100%;
+    }
+
+    .nav__social {
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+
+    .nav__cloud {
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
+    }
+    nav img {
+        height: 100%;
+    }
+
+    .nav__social {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .nav__cloud {
+        padding: 0 2.15rem;
+    }
+
+}
+@media screen and (max-width: 580px) {
+    nav{
+        height: 100%;
+    }
+    nav img {
+        max-height: 5rem;
+    }
+    .nav__social {
+        flex-direction: row;
+        gap: 3rem;
+        height: 2.5rem;
+    }
+    .nav__cloud {
+        height: 2.5rem;
+        padding: 0 2rem;
+    }
+
 }

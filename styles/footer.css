@@ -4,3 +4,23 @@ footer {
     font-style: italic;
     color: var(--cor-text-1);
 }
+
+@media screen and (max-width: 800px) {
+    footer {
+        display: flex;
+        transform: rotate(180deg);
+        width: 4.5rem;
+        height: 100vh;
+        writing-mode: vertical-lr;
+        padding-top: 4rem;
+        padding-left: 2rem;
+
+    }
+}
+
+@media screen and (max-width: 580px) {
+    footer {
+        font-size: 1rem;
+        width: 3rem;
+    }
+}
